@@ -82,6 +82,7 @@ public void actionPerformed(ActionEvent e){
 	}
 }
 2、在第二个包中，建立了有关学生登陆界面和老师登陆界面的两个类，还包括这两个登录界面接口到下个事件的另外四个类，加上主界面，共计7个类。到主界面以后进行登录，然后就可以分别进行成绩管理、课程管理等操作了。这部分主要代码如下：
+
 public class MainUI extends JFrame implements ActionListener { 
  //定义组件 
  JButton jb1,jb2,jb3=null; 
@@ -176,7 +177,9 @@ public class MainUI extends JFrame implements ActionListener {
      clear(); 
   }    
  } 
+
 3、此外，在主界面当中，设计了一个判断，当用户输入错误的用户名或密码时，自动弹出一个新的窗口报错，老师登录和学生登录判断方法一致。这部分的主要代码如下：
+
 public void stulogin()
  { 
   if(stu_name.equals(jtf.getText())&&stu_pwd.equals(jpf.getText())) 
